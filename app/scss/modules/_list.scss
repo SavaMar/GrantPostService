@@ -1,0 +1,31 @@
+.list {
+	margin-left: 15%;
+	top:10%;
+	@include max-screen(1200px) {
+		margin-left: 5%;
+	}
+	&--description {
+		position: relative;
+		bottom: 125px;
+		margin-left: 1%;
+		width: 23%;
+	}
+	&--num,
+	&--title {
+		color: $blue;
+		align-items: center;
+		height: 50px;
+		@include align-item(center);
+		@include display-flex;
+		font-weight: bold;
+		padding-left:0;
+	}
+	&--text,
+	&--buttom {
+		padding: 0;
+	}
+	&--item {
+	    position: relative;
+	    bottom: 80px;
+	}
+}

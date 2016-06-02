@@ -1,0 +1,33 @@
+/* ===========================
+   Base
+   =========================== */
+@import "reset.scss";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+// Graphic chart
+$black: #000;
+$whiteLight: #F8F8F8;
+$blackLight: rgba(0,0,0,.7);
+$gray: #5B5B5B;
+$lightBlue: #3E8AE2;
+$blue: #3E8AE2;
+$darkBlue: #0959b9;
+
+ // Font
+$mainFont: 'Open Sans', sans-serif;
+
+// Img
+$mainBackground: url('../img/main_bg.jpg') center no-repeat;
+
+body {
+	font-family: $mainFont;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+h1 {
+	font-size: 40pt;
+}

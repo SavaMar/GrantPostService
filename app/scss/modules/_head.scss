@@ -1,0 +1,42 @@
+.head {
+	height: 5%;
+	&--item {
+		display: block;
+		padding: 0 10px;
+	}
+}
+
+.main--end {
+	padding: 0;
+	height: 100%;
+	z-index: 12;
+	&--block {
+		background-color: $blackLight;
+		height: 95%;
+		padding: 5% 0 0 5%;
+	}	
+
+}
+
+.slider {
+	height: 200px;
+	// background-color: #fff;
+	color: $lightBlue;
+	overflow: hidden;
+	font-weight: bold;
+	&--item {
+		.num {
+			font-size: 108px;
+			display: block;
+			height: 130px;
+		}
+		.decription {
+		    margin-left: 11%;
+		    display: block;
+		}
+	}
+}
+
+.main {
+	padding: 0 5%;
+}
