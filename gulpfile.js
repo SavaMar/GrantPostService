@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync');
 var concat = require('gulp-concat');
+var jade = require('gulp-jade');
 
 gulp.task('browserSync', function() {
 	browserSync({
@@ -20,6 +21,15 @@ gulp.task('sass', function(){
 	}))
 });
 
+gulp.task('jade', function() {
+    return gulp.src('app/jade/**/*.jade')
+        .pipe(jade({pretty: true}))
+        .pipe(gulp.dest('app/')) // указываем gulp куда положить скомпилированные HTML файлы
+        .pipe(browserSync.reload({
+			stream: true
+		}))
+});
+
 gulp.task('js', function() {
   return gulp.src("app/js/modules/*.js")
     .pipe(concat('main.js'))
@@ -29,8 +39,8 @@ gulp.task('js', function() {
 	}))
 });
 
-gulp.task('watch', ['browserSync', 'sass', 'js'], function (){
+gulp.task('watch', ['browserSync', 'sass', 'jade', 'js'], function (){
 	gulp.watch('app/scss/**/*.scss', ['sass']);
-	gulp.watch('app/*.html', browserSync.reload);
+	gulp.watch('app/jade/**/*.jade', ['jade']);
 	gulp.watch('app/js/**/*.js', ['js']);
 });

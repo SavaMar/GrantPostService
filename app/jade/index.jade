@@ -1,0 +1,118 @@
+extends layout.jade
+block title
+  title GPServ
+
+block content
+  - var txt_color = "txt-white"
+  - var bg_color = "bgc-black"
+  // step1
+  .l-main.block1.img-bg-main
+    include ./includes/nav.jade
+        // center / main
+    .main.small-6.columns
+      .small-12.columns.m-top-40
+        h1 Современный сервис курьерских услуг
+    // box vs icons
+    .small-8.columns.small-offset-2.icons-box
+      .box.small-3.columns
+        p.m-top-20
+          i.fa.fa-cube.fa-5x(aria-hidden='true')
+          br
+          | Вызов
+          br
+          | курьера
+      .box.small-3.columns
+        p.m-top-20
+          i.fa.fa-cube.fa-5x(aria-hidden='true')
+          br
+          | Отслеживание
+      .box.small-3.columns
+        p.m-top-20
+          i.fa.fa-cube.fa-5x(aria-hidden='true')
+          br
+          | Тарифы и
+          br
+          | сроки
+      .box.small-3.columns
+        p.m-top-20
+          i.fa.fa-cube.fa-5x(aria-hidden='true')
+          br
+          | Тарифный
+          br
+          | калькулятор
+    // main-end
+    .small-4.columns.main--end
+      include ./includes/head.jade
+      .main--end--block
+        .small-6.columns.slider
+          .small-12.columns.slider--item
+            span.num 12
+            span.decription
+              | лет на рынке 
+              br
+              |  Казахстана
+          .small-12.columns.slider--item
+            span.num 32
+            span.decription отделения в стране
+    include ./includes/lengv.jade
+  // step 2
+  .step2.columns.small-12
+    .small-12.columns.backgrounds
+      .bg-color.small-2.columns item
+      .bg-color.small-2.columns item
+      .bg-color.small-2.columns item
+      .bg-color.small-2.columns item
+      .bg-color.small-2.columns item
+      .bg-color.small-2.columns item
+  .block2.small-12.columns
+    .list.small-10.columns
+      .list--description.small-12.collumns
+        p.block-name Почему работать с нами выгодно
+      .list--item.small-3.columns
+        .small-12.medium-3.large-2.columns.list--num.txt-large 1
+        .small-10.medium-9.large-10.columns.list--title
+          | Прозрачные 
+          br
+          |  цены
+        .list--text.small-12.columns
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus voluptas
+            | aut tempora rem.
+      .list--item.small-3.columns
+        .small-12.medium-3.large-2.columns.list--num.txt-large 2
+        .small-10.medium-9.large-10.columns.list--title
+          | Бесплатный 
+          br
+          | вызов курьера
+        .list--text.small-12.columns
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus voluptas
+            | aut tempora rem.
+      .list--item.small-3.columns
+        .small-12.medium-3.large-2.columns.list--num.txt-large 3
+        .small-10.medium-9.large-10.columns.list--title
+          | Собственный
+          br
+          | автопарк
+        .list--text.small-12.columns
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus voluptas
+            | aut tempora rem.
+      .list--item.small-3.columns
+        .small-12.medium-3.large-2.columns.list--num.txt-large 4
+        .small-10.medium-9.large-10.columns.list--title
+          | Доставка
+          br
+          | из "рук в руки"
+        .list--text.small-12.columns
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus voluptas
+            | aut tempora rem.
+      .list--buttom.small-12.columns
+        a.btn(href='#') Смотреть все услуги
+  .step3.small-12.columns
+    // animation color
+    .block3.small-12.columns
+      .small-10.columns.map
+        .map--description.small-12.columns
+          p.block-name География

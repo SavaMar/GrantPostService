@@ -1,0 +1,11 @@
+doctype html
+html
+  head
+    include ./includes/header.jade
+    block title
+      title Default title
+  body
+    include ./includes/mob_nav.jade
+    .wrapper
+        block content
+    script(src='js/main.js')

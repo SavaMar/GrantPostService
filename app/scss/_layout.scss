@@ -3,18 +3,27 @@
    =========================== */
 .wrapper {
 	width: 100%;
-	// position: relative;
 }
 .l-main {
-	background: $mainBackground;
-	background-size: cover;
-	height: 120vh;
 	color: $whiteLight;
 	z-index: 10;
-	a {
-		color: $whiteLight;
-	}
 }
+
+
+.img-bg-main,
+.img-bg2 {
+  background-size: cover;
+}
+
+.img-bg-main {
+  background: $mainBackground;
+  height: 120vh;
+}
+
+.img-bg2 {
+  background: $mainBackground;
+  height: 100vh;
+ }
 
 .step1 { z-index: 10 }
 .step2 { z-index: 15 }
@@ -85,10 +94,24 @@
   display: block;
 }
 
-.txt-white {
-  color: #fff !important;
+.w_active {
+  color: $whiteLight !important;
 }
 
+.txt-white a,
+.txt-white p {
+  color: $whiteLight;
+}
+
+
+.txt-black p,
+.txt-black a {
+  color: $black;
+}
+
+.bgc-black {
+    background-color: $blackLight;
+}
 
 .btn {
   display: block;
