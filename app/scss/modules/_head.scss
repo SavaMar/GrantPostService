@@ -1,8 +1,35 @@
 .head {
 	height: 5%;
+	&--menu {
+		display: flex;
+	    align-items: center;
+	    margin: 0;
+	    float: right;
+	}
 	&--item {
-		display: block;
-		padding: 0 10px;
+		padding: 0 20px;
+		float: right;
+		display: flex;
+	    align-items: center;
+	    @include transition(color, 0.7s);
+	    &:hover {
+	    	@include transition(color, 0.7s);
+	    	color: #000;
+	    }
+	    p {
+	    	font-size: 10pt;
+	    	@include max-screen(1200px) {
+	    		display: none;
+	    	}
+	    	margin-left: 10px;
+	    }
+	    i {
+			font-size: 22pt;
+			@include max-screen(700px) {
+	    		font-size: 40pt;
+	    		@include transition(font-size, 0.7s);
+    		}
+		}
 	}
 }
 

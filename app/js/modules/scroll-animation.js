@@ -36,7 +36,7 @@ $(document).ready(function() {
 	// ========= elements animation
 		var block2_title = new TimelineMax()
 			.append([
-				TweenMax.staggerFromTo( $('.block-name'), 0.7, {width:0, autoAlpha:0, marginLeft:-40, immediateRender:true}, {width:310,autoAlpha:1, marginLeft:0, delay:.7}, 0.1)
+				TweenMax.staggerFromTo( $('.block-name'), 0.7, {height:0, autoAlpha:0, marginLeft:-40, immediateRender:true}, {height:40,autoAlpha:1, marginLeft:0, delay:.7}, 0.1)
 			]);
 		var block2_items = new TimelineMax()
 			.append([

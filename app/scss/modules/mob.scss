@@ -1,0 +1,60 @@
+.mob {
+	position: fixed;
+	z-index: 80;
+	height: 100%;
+	width: 100%;
+	background-color: $blue;
+	top:0;
+	color: #fff;
+	display: none;
+	overflow: hidden;
+	text-align: center;
+	&--title,
+	&--fa {
+		color: $darkBlue;
+		@include transition(color, 0.6s);
+		&:hover {
+			color: #fff;
+			@include transition(color, 0.6s);
+		}
+	}
+	&--fa {
+		cursor: pointer;
+	}
+	&--title {
+		font-weight: bold;
+	}
+	&--item {
+		font-size: 15px;
+		display: block;
+		padding: 30px;
+		border-bottom: 1px solid $darkBlue;
+		color: #fff;
+		position: relative;
+		font-weight: bold;
+		@include transition(color, 0.6s);
+		&:hover {
+			color: $darkBlue;
+			@include transition(color, 0.6s);
+			span {
+				width: 100%;
+				@include transition(width, 0.6s);
+			}
+		}
+		span {
+			height: 50px;
+			position: absolute;
+			display: block;
+			width: 0px;
+			border-bottom: 1px solid #fff;
+		    bottom: -1px;
+		    left: 0;
+		    @include transition(width, 0.9s);
+		}
+	}
+	&--description {
+		font-size: 12pt;
+	}
+}
+
+// HERE

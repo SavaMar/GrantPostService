@@ -1,4 +1,19 @@
 $(document).ready(function() {
+	var menu_bar = $('.event');
+	var menu_full = $('.mob');
+	var wrap = $('.wrapper');
+
+	menu_bar.click(function() {
+		menu_full.fadeIn("slow");
+		wrap.fadeOut("slow");
+	});
+
+	menu_full.click(function() {
+		menu_full.fadeOut("slow");
+		wrap.fadeIn("slow");
+	});
+});
+$(document).ready(function() {
 	var step2Height;
 	var step3Height;
 
@@ -36,7 +51,7 @@ $(document).ready(function() {
 	// ========= elements animation
 		var block2_title = new TimelineMax()
 			.append([
-				TweenMax.staggerFromTo( $('.block-name'), 0.7, {width:0, autoAlpha:0, marginLeft:-40, immediateRender:true}, {width:310,autoAlpha:1, marginLeft:0, delay:.7}, 0.1)
+				TweenMax.staggerFromTo( $('.block-name'), 0.7, {height:0, autoAlpha:0, marginLeft:-40, immediateRender:true}, {height:40,autoAlpha:1, marginLeft:0, delay:.7}, 0.1)
 			]);
 		var block2_items = new TimelineMax()
 			.append([
