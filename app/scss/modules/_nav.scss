@@ -3,6 +3,7 @@
 	color: $whiteLight;
 	padding-left: 2%;
 	font-size: 15px;
+	z-index: 16;
 	@include transition(all, 0.7s);
 	@include max-screen(1200px) {
 		opacity: 0;

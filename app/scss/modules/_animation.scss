@@ -17,6 +17,21 @@
 	}
 }
 
+.addit-block {
+	position: absolute;
+	top: 0;
+	color: tomato;
+	padding: 0;
+	div {
+		border-right: 1px solid tomato;
+		padding: 0;
+		bottom: 0;
+	}
+	.bg-color {
+		height:0;
+		background-color: lightblue;
+	}
+}
 // .step2 > .backgrounds > .bg-color:nth-child(1){
 // 	// margin-top:10px;
 // 	height:0;

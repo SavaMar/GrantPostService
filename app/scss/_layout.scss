@@ -8,6 +8,17 @@
 	color: $whiteLight;
 	z-index: 10;
 }
+.l-footer {
+  height: 60px;
+  color: #000;
+  position: relative;
+  background-color: $whiteLight;
+  z-index: 17;
+  @include display-flex;
+  @include align-item(center);
+  font-weight: bold;
+  font-size: 12px;
+}
 
 
 .img-bg-main,
@@ -21,20 +32,22 @@
 }
 
 .img-bg2 {
-  background: $mainBackground;
+  background: $additBackground;
   height: 100vh;
  }
 
-.step1 { z-index: 10 }
-.step2 { z-index: 15 }
-.step3 { z-index: 16 }
-.step4 { z-index: 17 }
-.step5 { z-index: 18 }
+.step1 { z-index: 10; }
+.step2 { z-index: 15; }
+.addit-block { z-index: 10; }
+.content { z-index: 16; }
+.step3 { z-index: 16; }
+.step4 { z-index: 17; }
+.step5 { z-index: 18; }
 
-.block2 { z-index: 20 }
-.block3 { z-index: 20 }
-.block4 { z-index: 25 }
-.block5 { z-index: 25 }
+.block2 { z-index: 20; }
+.block3 { z-index: 20; }
+.block4 { z-index: 25; }
+.block5 { z-index: 25; }
 
 /* ===========================
    Style
