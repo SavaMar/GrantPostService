@@ -76,14 +76,17 @@
   }
 }
 
-//-----------------
+//--------- display --------
+
 @mixin align-item($position) {
   -webkit-align-items: $position; //Safari
   align-items: $position;
+  -ms-align-items:  $position;
 }
 
 
 @mixin display-flex {
   display: -webkit-flex; //Safari
+  display: -ms-flexbox;
   display: flex;
 }

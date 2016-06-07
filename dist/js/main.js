@@ -23,8 +23,10 @@ $(document).ready(function() {
 
 
 
-
-
+	// ======= content
+		var content = new TimelineMax().append([
+				TweenMax.fromTo( $('.content'), 0.8, {autoAlpha:0}, {autoAlpha:1, delay:.6}, 0.1),
+			]);
 
 	// ======= head
 		var head_icons_box = new TimelineMax().append([
@@ -52,7 +54,7 @@ $(document).ready(function() {
 				TweenMax.fromTo($( '.addit-block .backgrounds > .bg-color:nth-child(1)' ), 1.3, {height:0, marginTop:mainHight, immediateRender:true}, {height:mainHight, marginTop:0}),
 				TweenMax.fromTo($( '.addit-block .backgrounds > .bg-color:nth-child(2)' ), 2.1, {height:0, marginTop:mainHight, immediateRender:true}, {height:mainHight, marginTop:0}),
 				TweenMax.fromTo($( '.addit-block .backgrounds > .bg-color:nth-child(3)' ), 0.7, {height:0, marginTop:mainHight, immediateRender:true}, {height:mainHight, marginTop:0}),
-				TweenMax.fromTo($( '.addit-block .backgrounds > .bg-color:nth-child(4)' ), 2, {height:0, marginTop:mainHight, immediateRender:true}, {height:mainHight-120, marginTop:120}),
+				TweenMax.fromTo($( '.addit-block .backgrounds > .bg-color:nth-child(4)' ), 2, {height:0, marginTop:mainHight, immediateRender:true}, {height:mainHight-320, marginTop:320}),
 				TweenMax.fromTo($( '.addit-block .backgrounds > .bg-color:nth-child(5)' ), 2.8, {height:0, marginTop:mainHight, immediateRender:true}, {height:mainHight-500, marginTop:500}),
 				// TweenMax.fromTo($( '.addit-block .backgrounds > .bg-color:nth-child(6)' ), 1.2, {height:0, marginTop:mainHight, immediateRender:true}, {height:mainHight-490, marginTop:490})
 			]);

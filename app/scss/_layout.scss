@@ -20,6 +20,20 @@
   font-size: 12px;
 }
 
+.content { 
+  z-index: 16;
+  @include display-flex;
+  @include align-item(center);
+  height: 80vh;
+}
+
+.main-link {
+  text-transform: uppercase;
+  color: $gray;
+  font-size: 15px;
+  display: block;
+}
+
 
 .img-bg-main,
 .img-bg2 {
@@ -36,10 +50,11 @@
   height: 100vh;
  }
 
+
+.head { z-index: 16;}
 .step1 { z-index: 10; }
 .step2 { z-index: 15; }
 .addit-block { z-index: 10; }
-.content { z-index: 16; }
 .step3 { z-index: 16; }
 .step4 { z-index: 17; }
 .step5 { z-index: 18; }
@@ -131,7 +146,7 @@
   padding: 15px;
   background-color: $lightBlue;
   color: #FFF;
-  width: 25%;
+  width: 290px;
   font-size: 12pt;
   font-weight: bold;
   text-align: center;

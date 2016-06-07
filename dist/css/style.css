@@ -1220,11 +1220,29 @@ h1 {
   background-color: #F8F8F8;
   z-index: 17;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-align-items: center;
   align-items: center;
+  -ms-align-items: center;
   font-weight: bold;
   font-size: 12px; }
+
+.content {
+  z-index: 16;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -ms-align-items: center;
+  height: 80vh; }
+
+.main-link {
+  text-transform: uppercase;
+  color: #5B5B5B;
+  font-size: 15px;
+  display: block; }
 
 .img-bg-main,
 .img-bg2 {
@@ -1238,6 +1256,9 @@ h1 {
   background: url("../img/main_bg4.jpg") center no-repeat;
   height: 100vh; }
 
+.head {
+  z-index: 16; }
+
 .step1 {
   z-index: 10; }
 
@@ -1246,9 +1267,6 @@ h1 {
 
 .addit-block {
   z-index: 10; }
-
-.content {
-  z-index: 16; }
 
 .step3 {
   z-index: 16; }
@@ -1335,7 +1353,7 @@ h1 {
   padding: 15px;
   background-color: #3E8AE2;
   color: #FFF;
-  width: 25%;
+  width: 290px;
   font-size: 12pt;
   font-weight: bold;
   text-align: center;
@@ -1550,7 +1568,7 @@ h1 {
     bottom: 0; }
   .addit-block .bg-color {
     height: 0;
-    background-color: lightblue; }
+    background-color: #fff; }
 
 .ScrollSceneIndicators {
   z-index: 99999 !important; }
@@ -1578,11 +1596,13 @@ h1 {
     height: 50px;
     -webkit-align-items: center;
     align-items: center;
+    -ms-align-items: center;
     display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     font-weight: bold;
     padding-left: 0; }
-  .list--text, .list--buttom {
+  .list--text, .list--button {
     padding: 0; }
   .list--item {
     position: relative;
@@ -1673,9 +1693,29 @@ h1 {
   .footer--item {
     display: inline-block; }
     .footer--item a {
-      padding: 0 20px;
+      padding: 0 30px;
       color: #000; }
   .footer--copy {
     padding: 0 20px;
     display: block;
     color: #5B5B5B; }
+
+form input {
+  border: 1px solid rgba(40, 40, 40, 0.3);
+  background: #ffffff !important;
+  outline: none;
+  color: #000;
+  padding: 10px;
+  width: 70%;
+  display: block; }
+
+form label {
+  margin-top: 30px;
+  display: block;
+  color: #5B5B5B;
+  font-weight: bold; }
+
+.form-button {
+  margin-top: 30px;
+  padding: 0;
+  padding-right: 75px; }
