@@ -141,6 +141,13 @@
     background-color: $blackLight;
 }
 
+.center {
+  @include align-item(center);
+}
+.flex-block {
+  @include display-flex;
+}
+
 .btn {
   display: block;
   padding: 15px;

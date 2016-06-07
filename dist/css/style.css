@@ -1348,6 +1348,16 @@ h1 {
 .bgc-black {
   background-color: rgba(0, 0, 0, 0.7); }
 
+.center {
+  -webkit-align-items: center;
+  align-items: center;
+  -ms-align-items: center; }
+
+.flex-block {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
 .btn {
   display: block;
   padding: 15px;
@@ -1557,15 +1567,18 @@ h1 {
     height: 0;
     background-color: lightblue; }
 
+.reverse-block,
 .addit-block {
   position: absolute;
   top: 0;
   color: tomato;
   padding: 0; }
+  .reverse-block div,
   .addit-block div {
     border-right: 1px solid tomato;
     padding: 0;
     bottom: 0; }
+  .reverse-block .bg-color,
   .addit-block .bg-color {
     height: 0;
     background-color: #fff; }
@@ -1710,12 +1723,28 @@ form input {
   display: block; }
 
 form label {
-  margin-top: 30px;
   display: block;
   color: #5B5B5B;
   font-weight: bold; }
+
+form .lbl-margn-top {
+  margin-top: 30px; }
+
+form .lbl-position-left {
+  margin-top: 10px; }
 
 .form-button {
   margin-top: 30px;
   padding: 0;
   padding-right: 75px; }
+
+.form-descrpt {
+  color: #5B5B5B; }
+
+.form-reset {
+  color: #5B5B5B;
+  display: block;
+  clear: both;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 15px; }
