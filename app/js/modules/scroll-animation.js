@@ -29,7 +29,7 @@ $(document).ready(function() {
 				TweenMax.fromTo($( '.step2 .backgrounds > .bg-color:nth-child(1)' ), 1.3, {height:0, marginTop:0, immediateRender:true}, {height:step2Height+1600, marginTop:0}),
 				TweenMax.fromTo($( '.step2 .backgrounds > .bg-color:nth-child(2)' ), 1.1, {height:0, marginTop:0, immediateRender:true}, {height:step2Height+1600, marginTop:0}),
 				TweenMax.fromTo($( '.step2 .backgrounds > .bg-color:nth-child(3)' ), 1.7, {height:0, marginTop:0, immediateRender:true}, {height:step2Height+1600, marginTop:0}),
-				TweenMax.fromTo($( '.step2 .backgrounds > .bg-color:nth-child(4)' ), 1,   {height:0, marginTop:0, immediateRender:true}, {height:step2Height+1600, marginTop:0}),
+				TweenMax.fromTo($( '.step2 .backgrounds > .bg-color:nth-child(4)' ), 1, {height:0, marginTop:0, immediateRender:true}, {height:step2Height+1600, marginTop:0}),
 				TweenMax.fromTo($( '.step2 .backgrounds > .bg-color:nth-child(5)' ), 1.8, {height:0, marginTop:0, immediateRender:true}, {height:step2Height+1530, marginTop:70}),
 				TweenMax.fromTo($( '.step2 .backgrounds > .bg-color:nth-child(6)' ), 1.2, {height:0, marginTop:0, immediateRender:true}, {height:step2Height+1476, marginTop:124})
 			]);
@@ -39,7 +39,7 @@ $(document).ready(function() {
 				TweenMax.fromTo($( '.addit-block .backgrounds > .bg-color:nth-child(1)' ), 1.3, {height:0, marginTop:mainHight, immediateRender:true}, {height:mainHight, marginTop:0}),
 				TweenMax.fromTo($( '.addit-block .backgrounds > .bg-color:nth-child(2)' ), 2.1, {height:0, marginTop:mainHight, immediateRender:true}, {height:mainHight, marginTop:0}),
 				TweenMax.fromTo($( '.addit-block .backgrounds > .bg-color:nth-child(3)' ), 0.7, {height:0, marginTop:mainHight, immediateRender:true}, {height:mainHight, marginTop:0}),
-				TweenMax.fromTo($( '.addit-block .backgrounds > .bg-color:nth-child(4)' ), 2,   {height:0, marginTop:mainHight, immediateRender:true}, {height:mainHight-320, marginTop:320}),
+				TweenMax.fromTo($( '.addit-block .backgrounds > .bg-color:nth-child(4)' ), 2,   {height:0, marginTop:mainHight, immediateRender:true}, {height:mainHight-250, marginTop:250}),
 				TweenMax.fromTo($( '.addit-block .backgrounds > .bg-color:nth-child(5)' ), 2.8, {height:0, marginTop:mainHight, immediateRender:true}, {height:mainHight-500, marginTop:500}),
 				// TweenMax.fromTo($( '.addit-block .backgrounds > .bg-color:nth-child(6)' ), 1.2, {height:0, marginTop:mainHight, immediateRender:true}, {height:mainHight-490, marginTop:490})
 			]);

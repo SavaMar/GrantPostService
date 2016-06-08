@@ -1,16 +1,17 @@
+- var menu = { 'postage.html': 'Стоимость доставки', 'delivery_terms.html': 'Сроки доставки', 'nearest.html': 'Ближайшее отделение', '#': 'График работы отделений' };
+
 .nav--logo
   i.fa.fa-cube.fa-5x(aria-hidden='true')
   p Garant Post Service
 .nav.small-2.columns(class=bg_color)
   ul.nav--menu(class=txt_color)
-    li
-      a.nav--item(href='postage.html') Стоимость доставки
-    li
-      a.nav--item(href='delivery_terms.html') Сроки доставки
-    li
-      a.nav--item(href='#') Ближайшее отделение
-    li
-      a.nav--item(href='#') График работы отделений
+    each val, key in menu
+      if selected === key
+        li
+          a.nav--item.selected(href=key, title=val)= val
+      else
+        li
+          a.nav--item(href=key, title=val)= val
   .nav--adress(class=txt_color)
     p Республика Казахстан 
     p 050016, г.Алматы,

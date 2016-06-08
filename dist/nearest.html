@@ -53,7 +53,7 @@
           <ul class="nav--menu txt-black">
             <li><a href="postage.html" title="Стоимость доставки" class="nav--item">Стоимость доставки</a></li>
             <li><a href="delivery_terms.html" title="Сроки доставки" class="nav--item">Сроки доставки</a></li>
-            <li><a href="nearest.html" title="Ближайшее отделение" class="nav--item">Ближайшее отделение</a></li>
+            <li><a href="nearest.html" title="Ближайшее отделение" class="nav--item selected">Ближайшее отделение</a></li>
             <li><a href="#" title="График работы отделений" class="nav--item">График работы отделений</a></li>
           </ul>
           <div class="nav--adress txt-black">
@@ -85,26 +85,35 @@
           <div class="small-12 collumns"><a href="#" class="fl-right">PZ</a></div>
         </div>
         <div class="small-10 columns content">
-          <div class="small-7 columns end"><a href="index.html" class="main-link">на главную</a>
-            <p class="block-name">Заказать звонок</p>
+          <div class="small-8 columns end"><a href="index.html" class="main-link">на главную</a>
+            <p class="block-name">Ближайшее отделение</p>
+            <p class="form-descrpt">Данный сервис поможет Вам узнать ориентировочную дату<br>доставки Вашего отправления </p>
             <form>
-              <div class="small-6 columns">
-                <label class="lbl-margn-top">Имя </label><br>
-                <input type="text" name="first_name">
+              <div class="small-12 columns m-top-5">
+                <div class="small-3 columns">
+                  <label class="lbl-position-left"> Дата отправки</label>
+                </div>
+                <div class="small-7 columns end">
+                  <input type="date">
+                </div>
               </div>
-              <div class="small-6 columns">
-                <label class="lbl-margn-top">Фамилия </label><br>
-                <input type="text" name="second_name">
+              <div class="small-12 columns m-top-5">
+                <div class="small-3 columns">
+                  <label class="lbl-position-left"> Город-отправитель </label>
+                </div>
+                <div class="small-7 columns end">
+                  <input type="text">
+                </div>
               </div>
-              <div class="small-6 columns">
-                <label class="lbl-margn-top">Телефон </label><br>
-                <input type="tel" name="phone_number">
+              <div class="small-12 columns m-top-5">
+                <div class="small-3 columns end">
+                  <label class="lbl-position-left"> Город-получатель</label>
+                </div>
+                <div class="small-7 columns end">
+                  <input type="text">
+                </div>
               </div>
-              <div class="small-6 columns">
-                <label class="lbl-margn-top">Email </label><br>
-                <input type="email" name="email">
-              </div>
-              <div class="small-12 columns form-button"><a href="#" type="button" class="btn fl-right">Отправить</a></div>
+              <div class="small-10 columns form-button end"><a href="#" type="button" class="btn fl-right">Расчитать дату</a><a href="#" type="reset" name="clear_form" class="form-reset fl-right">Очистить</a></div>
             </form>
           </div>
         </div>
@@ -125,7 +134,7 @@
           </div>
         </div>
       </div>
-      <div class="addit-block columns small-12">
+      <div class="reverse-block columns small-12">
         <div class="small-12 columns backgrounds">
           <div class="bg-color small-2 columns">item</div>
           <div class="bg-color small-2 columns">item</div>

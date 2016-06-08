@@ -51,10 +51,10 @@
         </div>
         <div class="nav small-2 columns">
           <ul class="nav--menu txt-black">
-            <li><a href="postage.html" class="nav--item">Стоимость доставки</a></li>
-            <li><a href="delivery_terms.html" class="nav--item">Сроки доставки</a></li>
-            <li><a href="#" class="nav--item">Ближайшее отделение</a></li>
-            <li><a href="#" class="nav--item">График работы отделений</a></li>
+            <li><a href="postage.html" title="Стоимость доставки" class="nav--item selected">Стоимость доставки</a></li>
+            <li><a href="delivery_terms.html" title="Сроки доставки" class="nav--item">Сроки доставки</a></li>
+            <li><a href="nearest.html" title="Ближайшее отделение" class="nav--item">Ближайшее отделение</a></li>
+            <li><a href="#" title="График работы отделений" class="nav--item">График работы отделений</a></li>
           </ul>
           <div class="nav--adress txt-black">
             <p>Республика Казахстан </p>
@@ -85,26 +85,65 @@
           <div class="small-12 collumns"><a href="#" class="fl-right">PZ</a></div>
         </div>
         <div class="small-10 columns content">
-          <div class="small-8 columns end"><a href="index.html" class="main-link">на главную</a>
+          <div class="small-7 columns end"><a href="index.html" class="main-link">на главную</a>
             <p class="block-name">Стоимость доставки</p>
+            <p class="form-descrpt">Данный сервис поможет Вам узнать ориентировочную<br>стоимость доставки Вашего отправления</p>
             <form>
-              <div class="small-6 columns">
-                <label>Имя </label><br>
-                <input type="text" name="first_name">
+              <div class="small-12 columns m-top-5">
+                <div class="small-3 columns">
+                  <label class="lbl-position-left"> Маршрут</label>
+                </div>
+                <div class="small-3 columns">
+                  <label> Откуда</label>
+                  <input type="text">
+                </div>
+                <div class="small-3 columns end">
+                  <label> Куда</label>
+                  <input type="text">
+                </div>
               </div>
-              <div class="small-6 columns">
-                <label>Фамилия </label><br>
-                <input type="text" name="second_name">
+              <div class="small-12 columns m-top-5">
+                <div class="small-3 columns">
+                  <label class="lbl-position-left"> Вид доставки</label>
+                </div>
+                <div class="small-3 columns end">
+                  <input type="text">
+                </div>
               </div>
-              <div class="small-6 columns">
-                <label>Телефон </label><br>
-                <input type="tel" name="phone_number">
+              <div class="small-12 columns m-top-5">
+                <div class="small-3 columns">
+                  <label class="lbl-position-left"> Фактический вес</label>
+                </div>
+                <div class="small-3 columns end">
+                  <input type="text">
+                </div>
               </div>
-              <div class="small-6 columns">
-                <label>Email </label><br>
-                <input type="email" name="email">
+              <div class="small-12 columns m-top-5">
+                <div class="small-3 columns">
+                  <label class="lbl-position-left"> Габариты доставки</label>
+                </div>
+                <div class="small-3 columns end">
+                  <label> Длина</label>
+                  <input type="text">
+                </div>
+                <div class="small-3 columns end">
+                  <label> Ширина</label>
+                  <input type="text">
+                </div>
+                <div class="small-3 columns end">
+                  <label> Высота</label>
+                  <input type="text">
+                </div>
               </div>
-              <div class="small-11 columns form-button end"><a href="#" type="button" class="btn fl-right">Смотреть все услуги</a></div>
+              <div class="small-12 columns m-top-5">
+                <div class="small-3 columns">
+                  <label class="lbl-position-left"> Обьявленная стоимость</label>
+                </div>
+                <div class="small-3 columns end">
+                  <input type="text">
+                </div>
+              </div>
+              <div class="small-12 columns form-button"><a href="#" type="button" class="btn fl-right">Смотреть все услуги</a><a href="#" type="reset" name="clear_form" class="form-reset fl-right">Очистить</a></div>
             </form>
           </div>
         </div>

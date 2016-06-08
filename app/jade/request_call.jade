@@ -5,13 +5,14 @@ block title
 block content
   - var bg_color = nil
   - var txt_color = "txt-black"
+  - var selected = nil
   .l-main.img-bg2
     include ./includes/nav.jade
     .small-4.columns.small-offset-6
       include ./includes/head.jade
     include ./includes/lengv.jade
     .small-10.columns.content
-      .small-8.columns.end
+      .small-7.columns.end
         a(href="index.html").main-link на главную
         p.block-name Заказать звонок
         form
@@ -31,7 +32,7 @@ block content
             label.lbl-margn-top Email 
             br
             input(type="email", name="email")
-          .small-11.columns.form-button.end
+          .small-12.columns.form-button
             a.btn(href='#', type="button").fl-right Отправить
     .small-10.columns.footer.small-offset-2
       include ./includes/footer.jade
