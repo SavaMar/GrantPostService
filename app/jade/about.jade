@@ -1,0 +1,73 @@
+extends layout.jade
+block title
+  title О компании
+
+block content
+  - var bg_color = nil;
+  - var txt_color = "txt-black";
+  - var selected = nil
+  .l-main.img-bg2
+    include ./includes/nav.jade
+    .small-4.columns.small-offset-6
+      include ./includes/head.jade
+    include ./includes/lengv.jade
+    .small-9.columns.simple_content.small-offset-1
+      .small-6.columns.end
+        a(href="index.html").main-link на главную
+        p.block-name О компании
+        .small-12.columns.txt-black 
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut voluptate non sapiente molestiae pariatur ducimus ad! Officia fugiat sequi omnis fuga 
+            | doloribus eos! Voluptatum harum sapiente consequatur iure, eos sunt.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, id sint doloribus sequi incidunt, totam velit ut magnam deserunt molestias non minima laboriosam suscipit nemo reprehenderit aut labore rem officia.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus asperiores molestias, consequuntur deserunt atque, ab temporibus neque nobis minima iste officia ex veritatis reiciendis. Dignissimos aut laboriosam ipsam, quod ratione.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eaque veniam rerum asperiores, facilis repellat sint ad consequuntur exercitationem libero cumque laborum quasi commodi voluptate reprehenderit distinctio, voluptates voluptatibus laudantium.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, aut ipsa, soluta dignissimos quas possimus beatae voluptatem, enim vitae labore nostrum consequuntur exercitationem, consequatur sed atque tenetur quisquam aliquid qui!
+            br
+            br
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut voluptate non sapiente molestiae pariatur ducimus ad! Officia fugiat sequi omnis fuga doloribus eos! Voluptatum harum sapiente consequatur iure, eos sunt.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, id sint doloribus sequi incidunt, totam velit ut magnam deserunt molestias non minima laboriosam suscipit nemo reprehenderit aut labore rem officia.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus asperiores molestias, consequuntur deserunt atque, ab temporibus neque nobis minima iste officia
+      .small-12.columns.end.m-top-5
+        .small-12.columns
+          p.block-name-blue Наши приемущества
+        .small-6.medium-4.large-2.columns
+          p.block-name-d_blue.w-20 1   
+          p.txt-black 
+            |Самая развитая
+            br
+            |региональная сеть
+            br
+            |доставок по РК
+        .small-6.medium-4.large-2.columns.m-left-3
+          p.block-name-d_blue.w-20 2  
+          p.txt-black
+            |12 лет надежной службы
+            br
+            |только для наших
+            br
+            |клиентов
+        .small-6.medium-4.large-2.columns.m-left-3
+          p.block-name-d_blue.w-20 3 
+          p.txt-black
+            |Гарантируем качество
+            br
+            |нашей доставки
+        .small-6.medium-4.large-2.columns.end.m-left-3
+          p.block-name-d_blue.w-20 4   
+          p.txt-black
+            |Доставка под роспись
+            br
+            |получателя лично в руки
+            br
+            |без оплаты
+      .small-12.columns.end.m-top-5.m-btm-5
+        .small-12.columns
+          p.block-name-blue Наши награды
+        .small-2.columns 
+          img(src="img/award.png", alt="")
+        .small-2.columns.m-left-3
+          img(src="img/award.png", alt="")
+        .small-2.columns.m-left-3
+          img(src="img/award.png", alt="")
+        .small-2.columns.m-left-3
+          img(src="img/award.png", alt="")
+        .small-2.columns.end.m-left-3
+          img(src="img/award.png", alt="")
+    .small-10.columns.small-offset-2
+      include ./includes/footer.jade
+  .oposit-block.columns.small-12
+    include ./includes/bg_animate.jade

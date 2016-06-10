@@ -6,7 +6,7 @@ form {
     border: 1px solid $lightGray;
     background: #ffffff !important;
     outline: none;
-    color:#000;
+    color:$gray;
     padding: 10px;
     width: 100%;
     display: block;
@@ -24,6 +24,11 @@ form {
   .lbl-position-left {
     margin-top: 10px;
   }
+  textarea {
+    width: 100%; /* Ширина поля в процентах */
+    height: 200px; /* Высота поля в пикселах */
+    resize: none; /* Запрещаем изменять размер */
+   }
 }
 
 .form {
@@ -42,5 +47,20 @@ form {
     font-weight: bold;
     font-size: 15px;
     margin-top: 15px;
+  }
+  &--online-icon {
+    color: #fff;
+    background-color: $blue;
+    // border: 1px solid $lightGray;
+    text-align: center;
+    padding: 30px 10px;
+    width: 200px;
+    display: block;
+    @include transition(background-color, 0.7s);
+    height: 210px;
+    &:hover {
+      @include transition(background-color, 0.7s);
+      background-color: $darkBlue;
+    }
   }
 }

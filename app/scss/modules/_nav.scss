@@ -9,9 +9,9 @@
 		opacity: 0;
 		@include transition(all, 0.7s);
 	}
-	@include max-screen(1100px) {
-		display: none;
-	}
+	// @include max-screen(1100px) {
+	// 	display: none;
+	// }
 	&--logo {
 		@include max-screen(1200px) {
 			@include transition(all, 0.7s);

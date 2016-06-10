@@ -1,0 +1,101 @@
+extends layout.jade
+block title
+  title GPServ
+
+block content
+  - var bg_color = nil
+  - var txt_color = "txt-black"
+  - var selected = nil
+  .l-main.white-bgc
+    include ./includes/nav.jade
+    .small-4.columns.small-offset-6
+      include ./includes/head.jade
+    include ./includes/lengv.jade
+    .small-10.columns.content
+      .small-12.columns.end
+        a(href="index.html").main-link на главную
+        p.block-name Онлайн инструменты
+        form
+          .small-11.columns
+            .small-2.columns
+              a(href="#").form--online-icon
+                i.fa.fa-cube.fa-5x(aria-hidden='true')
+                br
+                br
+                | Вызов
+                br
+                | курьера
+            .small-2.columns
+              a(href="#").form--online-icon
+                i.fa.fa-cube.fa-5x(aria-hidden='true')
+                br
+                br
+                | Отслеживание
+            .small-2.columns
+              a(href="#").form--online-icon
+                i.fa.fa-cube.fa-5x(aria-hidden='true')
+                br
+                br
+                | Тарифы
+                br
+                | и сроки
+            .small-2.columns
+              a(href="#").form--online-icon
+                i.fa.fa-cube.fa-5x(aria-hidden='true')
+                br
+                br
+                | Тарифный
+                br
+                | калькулятор
+            .small-4.columns.txt-black
+              p Вызов курьера осуществляется
+                br
+                | с 9:00 до 18:00
+                br
+                br
+                | Вызвать курьера Вы можете позвонив
+                br
+                | по телефону
+                br
+                | +7 776 383 83 83
+                br
+                | +7 776 383 83 83
+            .small-12.columns
+              p.form-descrpt Для вызова курьера заполние форму
+          .small-11.columns.m-top-2.end
+            .small-4.columns.p-right-10
+              label  ФИО
+              input(type="text")
+            .small-4.columns.p-right-10
+              label  Вид отправки
+              input(type="text", placeholder="Пакет")
+            .small-4.columns
+              label  Общий вес
+              input(type="text")
+          .small-11.columns.m-top-2.end
+            .small-4.columns.p-right-10
+              label  Телефон
+              input(type="text")
+            .small-4.columns.p-right-10
+              label  Пункт назначения
+              input(type="text")
+            .small-4.columns
+              label  Обьем
+              input(type="text")
+          .small-11.columns.m-top-2.end
+            .small-4.columns.p-right-10
+              label  Адресс отправителя
+              input(type="text")
+            .small-4.columns.end.p-right-10
+              label  Страховая сумма
+              input(type="text")
+          .small-11.columns.form-button.end
+            .small-offset-4.small-4.columns.fl-left
+              .small-3.columns.p-right-10
+                label.lbl-position-left  Код
+              .small-9.columns.end
+                input(type="text")
+            a.btn(href='#', type="button").fl-right Смотреть все услуги
+            a.form-reset(href='#',type="reset", name="clear_form").fl-right Очистить
+    .small-10.columns.footer.small-offset-2
+      include ./includes/footer.jade

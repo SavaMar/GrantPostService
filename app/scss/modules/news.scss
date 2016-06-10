@@ -1,0 +1,33 @@
+.news {
+  &--thumb {
+    color: $gray;
+    margin: 30px 0;
+    // padding: 20px;
+    img {
+      display: block;
+    }
+  }
+  &--text {
+      display: block;
+      width: 70%;
+      height: 165px;
+      overflow: hidden;
+  }
+  &--title {
+    font-weight: bold;
+    display: block;
+  }
+  &--link {
+    color: $red;
+    display: block;
+    padding: 10px 0;
+    border-bottom: 2px solid $red;
+    font-weight: bold;
+    width: 130px;
+  }
+  &--text,
+  &--title,
+  &--link {
+    margin-left: 50px;
+  }
+}

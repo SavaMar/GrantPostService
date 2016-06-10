@@ -1,0 +1,42 @@
+extends layout.jade
+block title
+  title Контакты
+
+block content
+  - var bg_color = nil;
+  - var txt_color = "txt-black";
+  - var selected = nil
+  .l-main.img-bg2
+    include ./includes/nav.jade
+    .small-4.columns.small-offset-6
+      include ./includes/head.jade
+    include ./includes/lengv.jade
+    .small-10.columns.content
+      .small-6.columns.end
+        a(href="index.html").main-link на главную
+        p.block-name Контакты
+        p.form-descrpt
+          | Если у Вас есть вопросы, жалобы, предложения, сообщите нам
+        form
+          .small-12.columns
+            label.lbl-margn-top ФИО
+            br
+            input(type="text", name="first_name")
+          .small-12.columns
+            label.lbl-margn-top Телефон 
+            br
+            input(type="tel", name="phone_number")
+          .small-12.columns
+            label.lbl-margn-top Email 
+            br
+            input(type="email", name="email")
+          .small-12.columns
+            label.lbl-margn-top Сообщение 
+            br
+            textarea
+          .small-12.columns.form-button.end
+            a.btn(href='#', type="button").fl-right Отправить
+    .small-10.columns.footer.small-offset-2
+      include ./includes/footer.jade
+  .simple-block.columns.small-12
+    include ./includes/bg_animate.jade

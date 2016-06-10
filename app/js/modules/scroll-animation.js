@@ -12,6 +12,9 @@ $(document).ready(function() {
 		var content = new TimelineMax().append([
 				TweenMax.fromTo( $('.content'), 0.8, {autoAlpha:0}, {autoAlpha:1, delay:.6}, 0.1),
 			]);
+		var simple_content = new TimelineMax().append([
+				TweenMax.fromTo( $('.simple_content'), 0.8, {autoAlpha:0}, {autoAlpha:1, delay:.6}, 0.1),
+			]);
 
 	// ======= head
 		var head_icons_box = new TimelineMax().append([
@@ -26,12 +29,22 @@ $(document).ready(function() {
 	// ======= bg-animation
 		var step2_bg = new TimelineMax()
 			.append([
-				TweenMax.fromTo($( '.step2 .backgrounds > .bg-color:nth-child(1)' ), 1.3, {height:0, marginTop:0, immediateRender:true}, {height:step2Height+1600, marginTop:0}),
-				TweenMax.fromTo($( '.step2 .backgrounds > .bg-color:nth-child(2)' ), 1.1, {height:0, marginTop:0, immediateRender:true}, {height:step2Height+1600, marginTop:0}),
-				TweenMax.fromTo($( '.step2 .backgrounds > .bg-color:nth-child(3)' ), 1.7, {height:0, marginTop:0, immediateRender:true}, {height:step2Height+1600, marginTop:0}),
-				TweenMax.fromTo($( '.step2 .backgrounds > .bg-color:nth-child(4)' ), 1, {height:0, marginTop:0, immediateRender:true}, {height:step2Height+1600, marginTop:0}),
-				TweenMax.fromTo($( '.step2 .backgrounds > .bg-color:nth-child(5)' ), 1.8, {height:0, marginTop:0, immediateRender:true}, {height:step2Height+1530, marginTop:70}),
-				TweenMax.fromTo($( '.step2 .backgrounds > .bg-color:nth-child(6)' ), 1.2, {height:0, marginTop:0, immediateRender:true}, {height:step2Height+1476, marginTop:124})
+				TweenMax.fromTo($( '.step2 .backgrounds > .bg-color:nth-child(1)' ), 1.3, {height:0, marginTop:step2Height+1600, immediateRender:true}, {height:step2Height+1600, marginTop:0}),
+				TweenMax.fromTo($( '.step2 .backgrounds > .bg-color:nth-child(2)' ), 1.1, {height:0, marginTop:step2Height+1600, immediateRender:true}, {height:step2Height+1600, marginTop:0}),
+				TweenMax.fromTo($( '.step2 .backgrounds > .bg-color:nth-child(3)' ), 1.7, {height:0, marginTop:step2Height+1600, immediateRender:true}, {height:step2Height+1600, marginTop:0}),
+				TweenMax.fromTo($( '.step2 .backgrounds > .bg-color:nth-child(4)' ), 1,   {height:0, marginTop:step2Height+1600, immediateRender:true}, {height:step2Height+1600, marginTop:0}),
+				TweenMax.fromTo($( '.step2 .backgrounds > .bg-color:nth-child(5)' ), 1.8, {height:0, marginTop:step2Height+1530, immediateRender:true}, {height:step2Height+1530, marginTop:70}),
+				TweenMax.fromTo($( '.step2 .backgrounds > .bg-color:nth-child(6)' ), 1.2, {height:0, marginTop:step2Height+1476, immediateRender:true}, {height:step2Height+1476, marginTop:124})
+			]);
+
+			var simple_bg = new TimelineMax()
+			.append([
+				TweenMax.fromTo($( '.simple-block .backgrounds > .bg-color:nth-child(1)' ), 1.3, {height:0, marginTop:mainHight, immediateRender:true}, {height:mainHight, marginTop:0}),
+				TweenMax.fromTo($( '.simple-block .backgrounds > .bg-color:nth-child(2)' ), 1.1, {height:0, marginTop:mainHight, immediateRender:true}, {height:mainHight, marginTop:0}),
+				TweenMax.fromTo($( '.simple-block .backgrounds > .bg-color:nth-child(3)' ), 1.7, {height:0, marginTop:mainHight, immediateRender:true}, {height:mainHight, marginTop:0}),
+				TweenMax.fromTo($( '.simple-block .backgrounds > .bg-color:nth-child(4)' ), 1,   {height:0, marginTop:mainHight, immediateRender:true}, {height:mainHight, marginTop:0}),
+				// TweenMax.fromTo($( '..simple-block .backgrounds > .bg-color:nth-child(5)' ), 1.8, {height:0, marginTop:0, immediateRender:true}, {height:step2Height+1530, marginTop:70}),
+				// TweenMax.fromTo($( '..simple-block .backgrounds > .bg-color:nth-child(6)' ), 1.2, {height:0, marginTop:0, immediateRender:true}, {height:step2Height+1476, marginTop:124})
 			]);
 
 			var main_bg = new TimelineMax()
@@ -54,11 +67,25 @@ $(document).ready(function() {
 				TweenMax.fromTo($( '.reverse-block .backgrounds > .bg-color:nth-child(6)' ), 1.2, {height:mainHight, immediateRender:true}, {height:mainHight-790})
 			]);
 
+			var main_bg = new TimelineMax()
+			.append([
+				TweenMax.fromTo($( '.oposit-block .backgrounds > .bg-color:nth-child(1)' ), 1.3, {height:0, marginTop:mainHight, immediateRender:true}, {height:mainHight, marginTop:0}),
+				TweenMax.fromTo($( '.oposit-block .backgrounds > .bg-color:nth-child(2)' ), 2.1, {height:0, marginTop:mainHight, immediateRender:true}, {height:mainHight, marginTop:0}),
+				TweenMax.fromTo($( '.oposit-block .backgrounds > .bg-color:nth-child(3)' ), 0.7, {height:0, marginTop:mainHight, immediateRender:true}, {height:mainHight, marginTop:0}),
+				TweenMax.fromTo($( '.oposit-block .backgrounds > .bg-color:nth-child(4)' ), 2,   {height:0, marginTop:mainHight, immediateRender:true}, {height:mainHight-100, marginTop:100}),
+				TweenMax.fromTo($( '.oposit-block .backgrounds > .bg-color:nth-child(5)' ), 2.8, {height:0, marginTop:mainHight, immediateRender:true}, {height:mainHight-550, marginTop:550}),
+				TweenMax.fromTo($( '.oposit-block .backgrounds > .bg-color:nth-child(6)' ), 1.2, {height:0, marginTop:mainHight, immediateRender:true}, {height:mainHight-290, marginTop:290})
+			]);
+
 
 	// ========= elements animation
 		var block2_title = new TimelineMax()
 			.append([
 				TweenMax.staggerFromTo( $('.block-name'), 0.7, {height:0, autoAlpha:0, marginLeft:-40, immediateRender:true}, {height:40,autoAlpha:1, marginLeft:0, delay:.7}, 0.1)
+			]);
+		var aboute_title = new TimelineMax()
+			.append([
+				TweenMax.staggerFromTo( $('.block-name-blue'), 0.7, {height:0, autoAlpha:0, marginLeft:-40, immediateRender:true}, {height:40,autoAlpha:1, marginLeft:0, delay:.7}, 0.1)
 			]);
 		var block2_items = new TimelineMax()
 			.append([
@@ -107,12 +134,12 @@ $(document).ready(function() {
 
 		var scene5 = new ScrollMagic.Scene({triggerElement: ".block2", reverse:true, offset:-150, loglevel: 3})
 						.setTween(block2_items)
-						.addIndicators({
-						    colorStart: "rgba(255,0,0,0.5)",
-						    colorEnd: "rgba(255,0,255,0.5)", 
-						    colorTrigger : "rgba(255,255,255,1)",
-						    name: "icon-items"
-						})
+						// .addIndicators({
+						//     colorStart: "rgba(255,0,0,0.5)",
+						//     colorEnd: "rgba(255,0,255,0.5)", 
+						//     colorTrigger : "rgba(255,255,255,1)",
+						//     name: "icon-items"
+						// })
 						.loglevel(3)
 						.addTo(controller)
 

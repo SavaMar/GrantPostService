@@ -12,33 +12,25 @@ block content
       include ./includes/head.jade
     include ./includes/lengv.jade
     .small-10.columns.content
-      .small-8.columns.end
+      .small-6.columns.end
         a(href="index.html").main-link на главную
         p.block-name Ближайшее отделение
-        p.form-descrpt
-          | Данный сервис поможет Вам узнать ориентировочную дату
-          br
-          | доставки Вашего отправления 
         form
-          .small-12.columns.m-top-5
-            .small-3.columns
-              label.lbl-position-left  Дата отправки
-            .small-7.columns.end
-              input(type="date")
-          .small-12.columns.m-top-5
-            .small-3.columns
-              label.lbl-position-left  Город-отправитель 
-            .small-7.columns.end
-              input(type="text")
-          .small-12.columns.m-top-5
-            .small-3.columns.end
-              label.lbl-position-left  Город-получатель
-            .small-7.columns.end
-              input(type="text")
-          .small-10.columns.form-button.end
-            a.btn(href='#', type="button").fl-right Расчитать дату
-            a.form-reset(href='#',type="reset", name="clear_form").fl-right Очистить
+          .small-12.columns
+            input(type="text", placeholder="Введите адрес")
+          .small-12.columns
+            label.lbl-margn-top Город
+            br
+            input(type="text", placeholder="Алматы")
+          .small-12.columns
+            label.lbl-margn-top № отделения
+            br
+            input(type="text")
+          .small-12.columns
+            label.lbl-margn-top Тип отделения 
+            br
+            input(type="text")
     .small-10.columns.footer.small-offset-2
       include ./includes/footer.jade
-  .reverse-block.columns.small-12
+  .simple-block.columns.small-12
     include ./includes/bg_animate.jade

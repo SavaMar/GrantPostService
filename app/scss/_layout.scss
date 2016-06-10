@@ -10,7 +10,7 @@
 }
 .l-footer {
   height: 60px;
-  color: #000;
+  color: $gray;
   position: relative;
   background-color: $whiteLight;
   z-index: 17;
@@ -21,10 +21,14 @@
 }
 
 .content { 
-  z-index: 16;
   @include display-flex;
   @include align-item(center);
   height: 80vh;
+}
+
+.simple_content,
+.content {
+  z-index: 16;  
 }
 
 .main-link {
@@ -48,6 +52,11 @@
 .img-bg2 {
   background: $additBackground;
   height: 100vh;
+ }
+
+ .white-bgc {
+    background-color: #fff;
+    height: 100vh;
  }
 
 
@@ -74,6 +83,10 @@
 	float: left;
 }
 
+.m-top-2 {
+  margin-top: 2%;
+}
+
 .m-top-5 {
   margin-top: 5%;
 }
@@ -94,6 +107,10 @@
 	margin-top: 40%;
 }
 
+.m-btm-5 {
+  margin-bottom: 5%;
+}
+
 .m-btm-30 {
   margin-bottom: 30%;
 }
@@ -104,6 +121,14 @@
 
 .m-rght-5 {
   margin-right: 5%;
+}
+
+.m-left-3 {
+  margin-left: 3%;
+}
+
+.p-right-10 {
+  padding-right: 10px !important;
 }
 
 .txt-large {
@@ -131,10 +156,14 @@
   color: $whiteLight;
 }
 
+.w-20 {
+  width: 20px;
+}
 
+.txt-black,
 .txt-black p,
 .txt-black a {
-  color: $black;
+  color: $gray;
 }
 
 .bgc-black {
@@ -175,6 +204,24 @@
   padding-bottom: 10px;
   font-size: 13pt;
   display: inline-block;
+}
+
+.block-name-blue,
+.block-name-d_blue {
+  font-weight: bold;
+  padding-bottom: 5px;
+  font-size: 12pt;
+  display: inline-block;
+}
+
+.block-name-blue {
+  color: $blue;
+  border-bottom: 2px solid $blue;
+  margin-bottom: 50px;
+}
+.block-name-d_blue {
+  color: $darkBlue;
+  border-bottom: 2px solid $darkBlue;
 }
 
 .selected {

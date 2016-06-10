@@ -1,0 +1,74 @@
+extends layout.jade
+block title
+  title Новости
+
+block content
+  - var bg_color = nil;
+  - var txt_color = "txt-black";
+  - var selected = nil
+  .l-main.white-bgc
+    include ./includes/nav.jade
+    .small-4.columns.small-offset-6
+      include ./includes/head.jade
+    include ./includes/lengv.jade
+    .small-10.columns.simple_content
+      .small-12.columns
+        a(href="index.html").main-link на главную
+        p.block-name Новости
+        .small-12.columns.news
+          .news--thumb.medium-4.small-6.columns
+            img(src="http://fakeimg.pl/400x350/?text=400x350", alt="image")
+            p.news--title Срочность и оперативность доставки
+            p.news--text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, temporibus, cum laudantium iusto, delectus eveniet enim tenetur 
+              |aspernatur quae facilis, 
+              |corporis consectetur repellendus quia provident nemo. Quasi perferendis labore suscipit?
+            a(href="#").news--link Читать дальше
+          .news--thumb.medium-4.small-6.columns
+            img(src="http://fakeimg.pl/400x350/?text=400x350", alt="image")
+            p.news--title Срочность и оперативность доставки
+            p.news--text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde repellendus, accusamus provident quibusdam, deleniti 
+              |ducimus placeat rem similique eius
+              | modi ullam, impedit dolorum aspernatur error eligendi? Expedita odit similique minus!
+            a(href="#").news--link Читать дальше
+          .news--thumb.medium-4.small-6.columns
+            img(src="http://fakeimg.pl/400x350/?text=400x350", alt="image")
+            p.news--title Срочность и оперативность доставки
+            p.news--text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias voluptatem distinctio illum, architecto nulla 
+              |culpa ad deleniti hic error totam 
+              |minus vero repellat consequuntur sunt delectus minima consectetur assumenda rem!
+            a(href="#").news--link Читать дальше
+          .news--thumb.medium-4.small-6.columns
+            img(src="http://fakeimg.pl/400x350/?text=400x350", alt="image")
+            p.news--title Срочность и оперативность доставки
+            p.news--text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias voluptatem distinctio illum, architecto 
+              |nulla culpa ad deleniti hic error totam 
+              |minus vero repellat consequuntur sunt delectus minima consectetur assumenda rem!
+            a(href="#").news--link Читать дальше
+          .news--thumb.medium-4.small-6.columns.end
+            img(src="http://fakeimg.pl/400x350/?text=400x350", alt="image")
+            p.news--title Срочность и оперативность доставки
+            p.news--text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias voluptatem distinctio illum, architecto nulla 
+              |culpa ad deleniti hic error totam 
+              |minus vero repellat consequuntur sunt delectus minima consectetur assumenda rem!
+            a(href="#").news--link Читать дальше
+        .small-12.columns.m-btm-5.m-top-5
+          ul.pagination(role='navigation', aria-label='Pagination').fl-right
+            li.pagination-previous.disabled Previous 
+              span.show-for-sr page
+            li.current 1
+            li
+              a(href='#', aria-label='Page 2') 2
+            li
+              a(href='#', aria-label='Page 3') 3
+            li
+              a(href='#', aria-label='Page 4') 4
+            li.ellipsis(aria-hidden='true')
+            li
+              a(href='#', aria-label='Page 12') 12
+            li
+              a(href='#', aria-label='Page 13') 13
+            li.pagination-next
+              a(href='#', aria-label='Next page') Next 
+                span.show-for-sr page
+    .small-10.columns.small-offset-2
+      include ./includes/footer.jade

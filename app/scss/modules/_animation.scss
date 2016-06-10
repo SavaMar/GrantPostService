@@ -7,24 +7,7 @@
 	color: tomato;
 	padding: 0;
 	div {
-		border-right: 1px solid tomato;
-		padding: 0;
-		bottom: 0;
-	}
-	.bg-color {
-		height:0;
-		background-color: lightblue;
-	}
-}
-
-.reverse-block,
-.addit-block {
-	position: absolute;
-	top: 0;
-	color: tomato;
-	padding: 0;
-	div {
-		border-right: 1px solid tomato;
+		// border-right: 1px solid tomato;
 		padding: 0;
 		bottom: 0;
 	}
@@ -33,37 +16,24 @@
 		background-color: #fff;
 	}
 }
-// .step2 > .backgrounds > .bg-color:nth-child(1){
-// 	// margin-top:10px;
-// 	height:0;
-// 	background-color: #fff;
-// }
-// .step2 > .backgrounds > .bg-color:nth-child(2){
-// 	// margin-top:20px;
-// 	height:0;
-// 	background-color: #fff;
-// }
-// .step2 > .backgrounds> .bg-color:nth-child(3){
-// 	// margin-top:15px;
-// 	height:0;
-// 	background-color: #fff	
-// }
-// .step2 > .backgrounds > .bg-color:nth-child(4){
-// 	// margin-top:30px;
-// 	height:0px;
-// 	background-color: #fff;
-// }
-// .step2 > .backgrounds > .bg-color:nth-child(5){
-// 	// margin-top:30px;
-// 	height: 0;
-// 	background-color: #fff;
-// }
-// .step2 > .backgrounds > .bg-color:nth-child(6){
-// 	// margin-top:30px;
-// 	height:0;
-// 	background-color: #fff;
-// }
+
+.simple-block,
+.reverse-block,
+.addit-block,
+.oposit-block {
+	position: absolute;
+	top: 0;
+	color: tomato;
+	padding: 0;
+	div {
+		// border-right: 1px solid tomato;
+		padding: 0;
+		bottom: 0;
+	}
+	.bg-color {
+		height:0;
+		background-color: #fff;
+	}
+}
 
 .ScrollSceneIndicators { z-index: 99999 !important; }
-
-// :nth-child(-n+6)
