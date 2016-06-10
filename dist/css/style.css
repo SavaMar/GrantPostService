@@ -1951,3 +1951,10 @@ form textarea {
 
 .news--text, .news--title, .news--link {
   margin-left: 50px; }
+
+.news--date {
+  font-size: 14px;
+  font-weight: bold;
+  color: #5B5B5B;
+  position: relative;
+  top: 20px; }

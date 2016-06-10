@@ -30,4 +30,11 @@
   &--link {
     margin-left: 50px;
   }
+  &--date {
+    font-size: 14px;
+    font-weight: bold;
+    color: $gray;
+    position: relative;
+    top: 20px;
+  }
 }

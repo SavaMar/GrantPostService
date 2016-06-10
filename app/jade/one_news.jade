@@ -1,0 +1,31 @@
+extends layout.jade
+block title
+  title Одна какая то новость
+
+block content
+  - var bg_color = nil;
+  - var txt_color = "txt-black";
+  - var selected = nil
+  .l-main.img-bg2
+    include ./includes/nav.jade
+    .small-4.columns.small-offset-6
+      include ./includes/head.jade
+    include ./includes/lengv.jade
+    .small-9.columns.simple_content.small-offset-1
+      .small-6.columns.end.m-btm-5
+        a(href="index.html").main-link.fl-left на главную&#160;&#160; / &#160;
+        a(href="#").main-link архив
+        p.news--date 24.02.16
+        p.block-name Одна какая то новость
+        .small-12.columns.txt-black 
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut voluptate non sapiente molestiae pariatur ducimus ad! Officia fugiat sequi omnis fuga 
+            | doloribus eos! Voluptatum harum sapiente consequatur iure, eos sunt.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, id sint doloribus sequi incidunt, totam velit ut magnam deserunt molestias non minima laboriosam suscipit nemo reprehenderit aut labore rem officia.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus asperiores molestias, consequuntur deserunt atque, ab temporibus neque nobis minima iste officia ex veritatis reiciendis. Dignissimos aut laboriosam ipsam, quod ratione.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eaque veniam rerum asperiores, facilis repellat sint ad consequuntur exercitationem libero cumque laborum quasi commodi voluptate reprehenderit distinctio, voluptates voluptatibus laudantium.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, aut ipsa, soluta dignissimos quas possimus beatae voluptatem, enim vitae labore nostrum consequuntur exercitationem, consequatur sed atque tenetur quisquam aliquid qui!
+            br
+            br
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut voluptate non sapiente molestiae pariatur ducimus ad! Officia fugiat sequi omnis fuga doloribus eos! Voluptatum harum sapiente consequatur iure, eos sunt.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, id sint doloribus sequi incidunt, totam velit ut magnam deserunt molestias non minima laboriosam suscipit nemo reprehenderit aut labore rem officia.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus asperiores molestias, consequuntur deserunt atque, ab temporibus neque nobis minima iste officia
+        .small-12.columns.form-button
+            a.btn(href='news.html', type="button") Все новости
+    .small-10.columns.small-offset-2
+      include ./includes/footer.jade
+  .oposit-block.columns.small-12
+    include ./includes/bg_animate.jade
