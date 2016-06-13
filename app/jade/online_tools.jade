@@ -11,13 +11,13 @@ block content
     .small-4.columns.small-offset-6
       include ./includes/head.jade
     include ./includes/lengv.jade
-    .small-10.columns.content
-      .small-12.columns.end
+    .small-10.columns.simple_content
+      .small-12.columns.end.m-btm-5
         a(href="index.html").main-link на главную
         p.block-name Онлайн инструменты
         form
           .small-11.columns
-            .small-2.columns
+            .small-6.medium-2.columns.columns.m-top-2
               a(href="#").form--online-icon
                 i.fa.fa-cube.fa-5x(aria-hidden='true')
                 br
@@ -25,13 +25,13 @@ block content
                 | Вызов
                 br
                 | курьера
-            .small-2.columns
+            .small-6.medium-2.columns.columns.m-top-2
               a(href="#").form--online-icon
                 i.fa.fa-cube.fa-5x(aria-hidden='true')
                 br
                 br
                 | Отслеживание
-            .small-2.columns
+            .small-6.medium-2.columns.columns.m-top-2
               a(href="#").form--online-icon
                 i.fa.fa-cube.fa-5x(aria-hidden='true')
                 br
@@ -39,7 +39,7 @@ block content
                 | Тарифы
                 br
                 | и сроки
-            .small-2.columns
+            .small-6.medium-2.columns.columns.m-top-2
               a(href="#").form--online-icon
                 i.fa.fa-cube.fa-5x(aria-hidden='true')
                 br
@@ -47,7 +47,7 @@ block content
                 | Тарифный
                 br
                 | калькулятор
-            .small-4.columns.txt-black
+            .small-12.medium-4.columns.txt-black
               p Вызов курьера осуществляется
                 br
                 | с 9:00 до 18:00
@@ -97,5 +97,5 @@ block content
                 input(type="text")
             a.btn(href='#', type="button").fl-right Смотреть все услуги
             a.form-reset(href='#',type="reset", name="clear_form").fl-right Очистить
-    .small-10.columns.footer.small-offset-2
+    .small-10.columns.small-offset-2
       include ./includes/footer.jade

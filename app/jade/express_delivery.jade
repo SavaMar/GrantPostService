@@ -1,0 +1,34 @@
+extends layout.jade
+block title
+  title EXPRESS доставка
+
+block content
+  - var bg_color = nil;
+  - var txt_color = "txt-black";
+  - var selected = nil
+  .l-main.img-bg2
+    include ./includes/nav.jade
+    .small-4.columns.small-offset-6
+      include ./includes/head.jade
+    include ./includes/lengv.jade
+    .small-9.columns.simple_content.small-offset-1
+      .small-6.columns.end.m-btm-5
+        a(href="index.html").main-link.fl-left на главную&#160;&#160; / &#160;
+        a(href="#").main-link услуги и тарифы
+        p.block-name EXPRESS доставка
+        .small-12.columns.txt-black 
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut voluptate non sapiente molestiae pariatur ducimus ad! Officia fugiat sequi omnis fuga 
+            | doloribus eos! Voluptatum harum sapiente consequatur iure, eos sunt.  Lorem ipsum dolor 
+            br
+            ul.list-style 
+              li Lorem repellat. Est doloribus soluta voluptate, sit quae!
+              li Lorem ips rupiditate dolores neque.
+              li Lor labore quidem qpedita illum et pariatur dolore.
+              li Lorem ips aliquid moliandae vel cupiditate facere sed blanditiis!
+              li Esse assumenda ipsum, omnis facere totam.
+        .small-12.columns.form-button
+            a.btn(href='#', type="button") загузить прайс-лист
+    .small-10.columns.small-offset-2
+      include ./includes/footer.jade
+  .oposit-block.columns.small-12
+    include ./includes/bg_animate.jade

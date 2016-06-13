@@ -24,10 +24,13 @@
 				display: none;
 			}
 		}
+		@include max-screen(1400px) {
+			top: 1%;
+		}
 		@include transition(all, 0.7s);
 		font-weight: bold;
 		display: block;
-		width: 200px;
+		width: 170px;
 		text-align: center;
 		position: absolute;
 		top: 6%;
@@ -42,8 +45,10 @@
 		padding-left: 0;
 	}
 	&--item {
+		@include max-screen(1400px) {
+			height: 40px;
+		}
 		display: block;
-		// padding: 10% 0;
 		height: 60px;
 		@include transition(all, 0.3s);
 		&:hover {

@@ -21,9 +21,11 @@
 }
 
 .content { 
-  @include display-flex;
-  @include align-item(center);
-  height: 80vh;
+  @include min-screen(1400px) {
+    @include display-flex;
+    @include align-item(center);
+    height: 80vh;
+  }
 }
 
 .simple_content,
@@ -33,8 +35,8 @@
 
 .main-link {
   text-transform: uppercase;
-  color: $gray;
-  font-size: 15px;
+  color: $lightGray;
+  font-size: 13px;
   display: block;
 }
 
@@ -89,14 +91,23 @@
 
 .m-top-5 {
   margin-top: 5%;
+  @include max-screen(1400px) {
+    margin-top: 2%;
+  }
 }
 
 .m-top-10 {
   margin-top: 10%;
+  @include max-screen(1400px) {
+    margin-top: 3%;
+  }
 }
 
 .m-top-20 {
 	margin-top: 20%;
+  @include max-screen(1400px) {
+    margin-top: 5%;
+  }
 }
 
 .m-top-30 {
@@ -160,6 +171,10 @@
   width: 20px;
 }
 
+.list-style {
+  list-style-type: disc;
+  padding-left: 20px;
+}
 .txt-black,
 .txt-black p,
 .txt-black a {
@@ -177,6 +192,10 @@
   @include display-flex;
 }
 
+.posit-abs {
+  position: absolute;
+}
+
 .btn {
   display: block;
   padding: 15px;
@@ -188,8 +207,9 @@
   text-align: center;
   text-transform: uppercase;
   @include transition(background-color, 0.7s);
-  @include max-screen(1200px) {
+  @include max-screen(1400px) {
     font-size: 10pt;
+    width: 200px;
   }
   &:hover {
     @include transition(background-color, 0.7s);

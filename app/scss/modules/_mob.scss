@@ -33,6 +33,10 @@
 		position: relative;
 		font-weight: bold;
 		@include transition(color, 0.6s);
+		@include max-screen(1400px) {
+	    font-size: 12pt;
+	    padding: 20px;
+	  }
 		&:hover {
 			color: $darkBlue;
 			@include transition(color, 0.6s);

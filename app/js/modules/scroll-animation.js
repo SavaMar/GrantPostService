@@ -52,7 +52,7 @@ $(document).ready(function() {
 				TweenMax.fromTo($( '.addit-block .backgrounds > .bg-color:nth-child(1)' ), 1.3, {height:0, marginTop:mainHight, immediateRender:true}, {height:mainHight, marginTop:0}),
 				TweenMax.fromTo($( '.addit-block .backgrounds > .bg-color:nth-child(2)' ), 2.1, {height:0, marginTop:mainHight, immediateRender:true}, {height:mainHight, marginTop:0}),
 				TweenMax.fromTo($( '.addit-block .backgrounds > .bg-color:nth-child(3)' ), 0.7, {height:0, marginTop:mainHight, immediateRender:true}, {height:mainHight, marginTop:0}),
-				TweenMax.fromTo($( '.addit-block .backgrounds > .bg-color:nth-child(4)' ), 2,   {height:0, marginTop:mainHight, immediateRender:true}, {height:mainHight-250, marginTop:250}),
+				TweenMax.fromTo($( '.addit-block .backgrounds > .bg-color:nth-child(4)' ), 2,   {height:0, marginTop:mainHight, immediateRender:true}, {height:mainHight-200, marginTop:200}),
 				TweenMax.fromTo($( '.addit-block .backgrounds > .bg-color:nth-child(5)' ), 2.8, {height:0, marginTop:mainHight, immediateRender:true}, {height:mainHight-500, marginTop:500}),
 				// TweenMax.fromTo($( '.addit-block .backgrounds > .bg-color:nth-child(6)' ), 1.2, {height:0, marginTop:mainHight, immediateRender:true}, {height:mainHight-490, marginTop:490})
 			]);
@@ -60,11 +60,11 @@ $(document).ready(function() {
 			var reverse_bg = new TimelineMax()
 			.append([
 				TweenMax.fromTo($( '.reverse-block .backgrounds > .bg-color:nth-child(1)' ), 1.3, {height:mainHight, immediateRender:true}, {height:mainHight}),
-				TweenMax.fromTo($( '.reverse-block .backgrounds > .bg-color:nth-child(2)' ), 2.1, {height:mainHight, immediateRender:true}, {height:mainHight-100}),
-				TweenMax.fromTo($( '.reverse-block .backgrounds > .bg-color:nth-child(3)' ), 0.7, {height:mainHight, immediateRender:true}, {height:mainHight-210}),
-				TweenMax.fromTo($( '.reverse-block .backgrounds > .bg-color:nth-child(4)' ), 2,   {height:mainHight, immediateRender:true}, {height:mainHight-210}),
+				TweenMax.fromTo($( '.reverse-block .backgrounds > .bg-color:nth-child(2)' ), 2.1, {height:mainHight, immediateRender:true}, {height:mainHight-75}),
+				TweenMax.fromTo($( '.reverse-block .backgrounds > .bg-color:nth-child(3)' ), 0.7, {height:mainHight, immediateRender:true}, {height:mainHight-110}),
+				TweenMax.fromTo($( '.reverse-block .backgrounds > .bg-color:nth-child(4)' ), 2,   {height:mainHight, immediateRender:true}, {height:mainHight-110}),
 				TweenMax.fromTo($( '.reverse-block .backgrounds > .bg-color:nth-child(5)' ), 2.8, {height:mainHight, immediateRender:true}, {height:0}),
-				TweenMax.fromTo($( '.reverse-block .backgrounds > .bg-color:nth-child(6)' ), 1.2, {height:mainHight, immediateRender:true}, {height:mainHight-790})
+				TweenMax.fromTo($( '.reverse-block .backgrounds > .bg-color:nth-child(6)' ), 1.2, {height:mainHight, immediateRender:true}, {height:mainHight-690})
 			]);
 
 			var main_bg = new TimelineMax()

@@ -1,11 +1,11 @@
 extends layout.jade
 block title
-  title GPServ
+  title График работы отделений
 
 block content
   - var bg_color = nil;
   - var txt_color = "txt-black";
-  - var selected = 'nearest.html';
+  - var selected = 'schedule.html';
   .l-main.img-bg2
     include ./includes/nav.jade
     .small-4.columns.small-offset-6
@@ -14,7 +14,7 @@ block content
     .small-10.columns.content
       .small-6.columns.end
         a(href="index.html").main-link на главную
-        p.block-name Ближайшее отделение
+        p.block-name График работы отделений
         form
           .small-12.columns
             input(type="text", placeholder="Введите адрес")
@@ -30,7 +30,9 @@ block content
             label.lbl-margn-top Тип отделения 
             br
             input(type="text")
-    .small-10.columns.footer.small-offset-2.posit-abs
+          .small-12.columns.txt-black
+            p table
+    .small-10.columns.small-offset-2
       include ./includes/footer.jade
   .simple-block.columns.small-12
     include ./includes/bg_animate.jade

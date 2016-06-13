@@ -20,6 +20,9 @@ form {
   }
   .lbl-margn-top {
       margin-top: 30px;
+      @include max-screen(1400) {
+        margin-top: 15px;
+      }
   }
   .lbl-position-left {
     margin-top: 10px;
@@ -48,13 +51,22 @@ form {
     font-size: 15px;
     margin-top: 15px;
   }
+  &--services-icon {
+    width: 200px;
+  }
+  &--online-icon {
+    width: 200px;
+    @include max-screen(1400px) {
+      width: 140px
+    }
+  }
+  &--services-icon,
   &--online-icon {
     color: #fff;
     background-color: $blue;
     // border: 1px solid $lightGray;
     text-align: center;
     padding: 30px 10px;
-    width: 200px;
     display: block;
     @include transition(background-color, 0.7s);
     height: 210px;
