@@ -1563,6 +1563,9 @@ ul.pagination {
 .bgc-black {
   background-color: rgba(0, 0, 0, 0.7); }
 
+.bgc-gray {
+  background-color: #FAFAFA; }
+
 .center {
   -webkit-align-items: center;
   align-items: center;

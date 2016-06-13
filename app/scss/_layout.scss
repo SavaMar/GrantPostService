@@ -184,6 +184,9 @@
 .bgc-black {
     background-color: $blackLight;
 }
+.bgc-gray {
+    background-color: $lightelyGray;
+}
 
 .center {
   @include align-item(center);
