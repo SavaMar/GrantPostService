@@ -1,4 +1,8 @@
 $(document).ready(function() {
+
+});
+
+$(document).ready(function() {
 	var menu_bar = $('.event');
 	var menu_full = $('.mob');
 	var wrap = $('.wrapper');
