@@ -8,12 +8,15 @@
 	@include max-screen(1200px) {
 		opacity: 0;
 		@include transition(all, 0.7s);
-		height: 80vh;
+		height: 85vh;
 	}
 	// @include max-screen(1100px) {
 	// 	display: none;
 	// }
 	&--logo {
+		a {
+			color: #fff;
+		}
 		@include max-screen(1200px) {
 			@include transition(all, 0.7s);
 			width: 100px;

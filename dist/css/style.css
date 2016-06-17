@@ -2016,7 +2016,7 @@ ul.pagination {
     .nav {
       opacity: 0;
       transition: all 0.7s ease-out;
-      height: 80vh; } }
+      height: 85vh; } }
   .nav--logo {
     transition: all 0.7s ease-out;
     font-weight: bold;
@@ -2028,6 +2028,8 @@ ul.pagination {
     left: 2%;
     z-index: 40;
     background-color: #000; }
+    .nav--logo a {
+      color: #fff; }
     @media only screen and (max-width: 1200px) {
       .nav--logo {
         transition: all 0.7s ease-out;

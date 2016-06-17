@@ -1,8 +1,9 @@
 - var menu = { 'postage.html': 'Стоимость доставки', 'delivery_terms.html': 'Сроки доставки', 'nearest.html': 'Ближайшее отделение', 'schedule.html': 'График работы отделений' };
 
 .nav--logo
-  i.fa.fa-cube.fa-5x(aria-hidden='true')
-  p Garant Post Service
+  a(href="index.html")
+    i.fa.fa-cube.fa-5x(aria-hidden='true')
+    p Garant Post Service
 .nav.small-2.columns(class=bg_color)
   ul.nav--menu(class=txt_color)
     each val, key in menu
