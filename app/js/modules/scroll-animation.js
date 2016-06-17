@@ -91,6 +91,10 @@ $(document).ready(function() {
 			.append([
 				TweenMax.staggerFromTo( $('.list--item'), 0.7, {autoAlpha:0, marginTop:0, immediateRender:true}, {autoAlpha:1, marginTop:50, delay:.5}, 0.1)
 			]);
+		var block4_items = new TimelineMax()
+			.append([
+				TweenMax.staggerFromTo( $('.newsl--item'), 0.7, {autoAlpha:0, marginTop:0, immediateRender:true}, {autoAlpha:1, marginTop:50, delay:.5}, 0.1)
+			]);
 
 		controller = new ScrollMagic.Controller({loglevel: 3});
 		
@@ -141,6 +145,9 @@ $(document).ready(function() {
 						//     name: "icon-items"
 						// })
 						.loglevel(3)
+						.addTo(controller)
+		var scene6 = new ScrollMagic.Scene({triggerElement: ".block4", reverse:true, offset:-150, loglevel: 3})
+						.setTween(block4_items)
 						.addTo(controller)
 
 

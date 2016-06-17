@@ -3,5 +3,9 @@
 	height: 20%;
 	bottom: 10%;
 	z-index: 15;
+  a { color: #fff; }
 	text-align: center;
+  @include max-screen(1000px) {
+    bottom: 400px;
+  }
 }

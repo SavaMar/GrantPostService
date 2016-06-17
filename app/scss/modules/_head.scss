@@ -1,5 +1,5 @@
 .head {
-	height: 5%;
+	height: 8%;
 	&--menu {
 		display: flex;
 	    align-items: center;
@@ -20,8 +20,8 @@
 	    }
 	    i {
 			font-size: 22pt;
-			@include max-screen(700px) {
-	    		font-size: 40pt;
+			@include max-screen(980px) {
+	    		font-size: 50pt;
 	    		@include transition(font-size, 0.7s);
     		}
 		}
@@ -34,10 +34,12 @@
 	z-index: 12;
 	&--block {
 		background-color: $blackLight;
-		height: 95%;
+		height: 92%;
 		padding: 5% 0 0 5%;
-	}	
-
+		@include max-screen(980px) {
+			display: none;
+		}
+	}
 }
 
 .langv {
@@ -45,10 +47,13 @@
     right: 2%;
     top: 12%;
     z-index: 40;
+  	@include max-screen(980px) {
+  		display: none;
+  	}
 }
 
 .slider {
-	height: 200px;
+	height: 164px;
 	color: $lightBlue;
 	overflow: hidden;
 	font-weight: bold;

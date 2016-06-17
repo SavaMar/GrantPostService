@@ -9,6 +9,7 @@
     <script src="js/scrollmagic/minified/ScrollMagic.min.js"></script>
     <script src="js/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
     <script src="js/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCWdlNyjf2AqOuqPZHE8AuA7v9UsQUj7pk"></script>
     <!-- <script src="js/jquery.min.js"></script>-->
     <title>GPServ</title>
   </head>
@@ -77,18 +78,10 @@
         </div>
         <!-- box vs icons-->
         <div class="small-8 columns small-offset-2 icons-box">
-          <div class="box small-3 columns">
-            <p class="m-top-20"><i aria-hidden="true" class="fa fa-cube fa-5x"></i><br>Вызов<br>курьера</p>
-          </div>
-          <div class="box small-3 columns">
-            <p class="m-top-20"><i aria-hidden="true" class="fa fa-cube fa-5x"></i><br>Отслеживание</p>
-          </div>
-          <div class="box small-3 columns">
-            <p class="m-top-20"><i aria-hidden="true" class="fa fa-cube fa-5x"></i><br>Тарифы и<br>сроки</p>
-          </div>
-          <div class="box small-3 columns">
-            <p class="m-top-20"><i aria-hidden="true" class="fa fa-cube fa-5x"></i><br>Тарифный<br>калькулятор</p>
-          </div>
+          <div class="box small-3 columns"><a href="#" class="m-top-20"><i aria-hidden="true" class="fa fa-cube fa-5x"></i><br>Вызов<br>курьера</a></div>
+          <div class="box small-3 columns"><a href="#" class="m-top-20"><i aria-hidden="true" class="fa fa-cube fa-5x"></i><br>Отслеживание</a></div>
+          <div class="box small-3 columns"><a href="#" class="m-top-20"><i aria-hidden="true" class="fa fa-cube fa-5x"></i><br>Тарифы и<br>сроки</a></div>
+          <div class="box small-3 columns"><a href="#" class="m-top-20"><i aria-hidden="true" class="fa fa-cube fa-5x"></i><br>Тарифный<br>калькулятор</a></div>
         </div>
         <!-- main-end-->
         <div class="small-4 columns main--end">
@@ -129,7 +122,7 @@
           <div class="list--description small-12 collumns">
             <p class="block-name">Почему работать с нами выгодно</p>
           </div>
-          <div class="list--item small-3 columns">
+          <div class="list--item small-6 medium-3 columns">
             <div class="small-12 medium-3 large-2 columns list--num txt-large">1</div>
             <div class="small-10 medium-9 large-10 columns list--title">Прозрачные <br> цены</div>
             <div class="list--text small-12 columns">
@@ -189,7 +182,7 @@
             <div class="map--description small-12 columns">
               <p class="block-name">Новости</p>
             </div>
-            <div class="small-4 columns"><img src="http://fakeimg.pl/400x350/?text=400x350" alt="image">
+            <div class="small-4 columns newsl--item"><img src="http://fakeimg.pl/400x350/?text=400x350" alt="image">
               <p class="news--title">Срочность и оперативность доставки</p>
               <p class="news--text">
                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, temporibus, cum laudantium iusto, delectus eveniet enim tenetur 
@@ -197,7 +190,7 @@
                 corporis consectetur repellendus quia provident nemo. Quasi perferendis labore suscipit?
               </p><a href="one_news.html" class="news--link">Читать дальше</a>
             </div>
-            <div class="small-4 columns"><img src="http://fakeimg.pl/400x350/?text=400x350" alt="image">
+            <div class="small-4 columns newsl--item"><img src="http://fakeimg.pl/400x350/?text=400x350" alt="image">
               <p class="news--title">Срочность и оперативность доставки</p>
               <p class="news--text">
                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, temporibus, cum laudantium iusto, delectus eveniet enim tenetur 
@@ -205,7 +198,7 @@
                 corporis consectetur repellendus quia provident nemo. Quasi perferendis labore suscipit?
               </p><a href="one_news.html" class="news--link">Читать дальше</a>
             </div>
-            <div class="small-4 columns"><img src="http://fakeimg.pl/400x350/?text=400x350" alt="image">
+            <div class="small-4 columns newsl--item"><img src="http://fakeimg.pl/400x350/?text=400x350" alt="image">
               <p class="news--title">Срочность и оперативность доставки</p>
               <p class="news--text">
                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, temporibus, cum laudantium iusto, delectus eveniet enim tenetur 
@@ -217,15 +210,15 @@
           <div class="small-10 columns form-button m-top-10 small-offset-2"><a href="news.html" type="button" class="btn">Все новости</a></div>
         </div>
       </div>
-      <div class="step5 small-12 columns">
+      <div class="step5 small-12 columns m-btm-5">
         <!-- animation color-->
         <div class="block5 small-12 columns">
           <div class="small-10 columns map">
             <div class="map--description small-12 columns">
-              <p class="block-name">Картец</p>
+              <p class="block-name">Карта</p>
             </div>
             <div class="small-12 columns">
-              <p>тут будет карта</p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2904.795114631156!2d76.94670731548558!3d43.27666797913605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb7e3c8aeee154541!2sTOO+%22Garant+Post+Service%22!5e0!3m2!1sru!2s!4v1465978858268" height="450" frameborder="0" style="border:0" allowfullscreen class="map-l"></iframe>
             </div>
           </div>
         </div>

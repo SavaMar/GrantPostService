@@ -16,26 +16,26 @@ block content
     // box vs icons
     .small-8.columns.small-offset-2.icons-box
       .box.small-3.columns
-        p.m-top-20
+        a(href="#").m-top-20
           i.fa.fa-cube.fa-5x(aria-hidden='true')
           br
           | Вызов
           br
           | курьера
       .box.small-3.columns
-        p.m-top-20
+        a(href="#").m-top-20
           i.fa.fa-cube.fa-5x(aria-hidden='true')
           br
           | Отслеживание
       .box.small-3.columns
-        p.m-top-20
+        a(href="#").m-top-20
           i.fa.fa-cube.fa-5x(aria-hidden='true')
           br
           | Тарифы и
           br
           | сроки
       .box.small-3.columns
-        p.m-top-20
+        a(href="#").m-top-20
           i.fa.fa-cube.fa-5x(aria-hidden='true')
           br
           | Тарифный
@@ -62,7 +62,7 @@ block content
     .list.small-10.columns
       .list--description.small-12.collumns
         p.block-name Почему работать с нами выгодно
-      .list--item.small-3.columns
+      .list--item.small-6.medium-3.columns
         .small-12.medium-3.large-2.columns.list--num.txt-large 1
         .small-10.medium-9.large-10.columns.list--title
           | Прозрачные 
@@ -116,21 +116,21 @@ block content
       .small-10.columns.map
         .map--description.small-12.columns
           p.block-name Новости
-        .small-4.columns
+        .small-4.columns.newsl--item
           img(src="http://fakeimg.pl/400x350/?text=400x350", alt="image")
           p.news--title Срочность и оперативность доставки
           p.news--text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, temporibus, cum laudantium iusto, delectus eveniet enim tenetur 
               |aspernatur quae facilis, 
               |corporis consectetur repellendus quia provident nemo. Quasi perferendis labore suscipit?
             a(href="one_news.html").news--link Читать дальше
-        .small-4.columns
+        .small-4.columns.newsl--item
           img(src="http://fakeimg.pl/400x350/?text=400x350", alt="image")
           p.news--title Срочность и оперативность доставки
           p.news--text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, temporibus, cum laudantium iusto, delectus eveniet enim tenetur 
               |aspernatur quae facilis, 
               |corporis consectetur repellendus quia provident nemo. Quasi perferendis labore suscipit?
             a(href="one_news.html").news--link Читать дальше
-        .small-4.columns
+        .small-4.columns.newsl--item
           img(src="http://fakeimg.pl/400x350/?text=400x350", alt="image")
           p.news--title Срочность и оперативность доставки
           p.news--text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, temporibus, cum laudantium iusto, delectus eveniet enim tenetur 
@@ -139,13 +139,13 @@ block content
             a(href="one_news.html").news--link Читать дальше
       .small-10.columns.form-button.m-top-10.small-offset-2
           a.btn(href='news.html', type="button") Все новости
-  .step5.small-12.columns
+  .step5.small-12.columns.m-btm-5
     // animation color
     .block5.small-12.columns
       .small-10.columns.map
         .map--description.small-12.columns
-          p.block-name Картец
+          p.block-name Карта
         .small-12.columns
-          p тут будет карта
+            iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2904.795114631156!2d76.94670731548558!3d43.27666797913605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb7e3c8aeee154541!2sTOO+%22Garant+Post+Service%22!5e0!3m2!1sru!2s!4v1465978858268" height="450" frameborder="0" style="border:0" allowfullscreen).map-l
   .small-10.columns.small-offset-2
     include ./includes/footer.jade

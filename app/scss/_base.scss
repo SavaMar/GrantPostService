@@ -17,7 +17,17 @@ $darkBlue: #034287;
 $red: #901618;
 
  // Font
-$mainFont: 'Open Sans', sans-serif;
+ @font-face {
+    font-family: "MyriadProRegular";
+    src: url("../fonts/MyriadProRegular.eot");
+    src: url("../fonts/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProRegular.woff") format("woff"),
+    url("../fonts/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+$mainFont: 'MyriadProRegular';
 
 // Img
 $mainBackground: url('../img/main_bg.jpg') center no-repeat;
@@ -34,4 +44,10 @@ a {
 }
 h1 {
 	font-size: 40pt;
+  @include max-screen(1500px) {
+    font-size: 30pt;
+  }
+  @include max-screen(980px) {
+    font-size: 50pt;
+  }
 }
