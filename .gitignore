@@ -1,3 +1,4 @@
-/node_modules
+./node_modules
 /trash
 client_secret_589480229648-d5bfg1b5psagusl8fhsim4smb39bnhfc.apps.googleusercontent.com.json
+node_modules
